@@ -1,0 +1,15 @@
+
+.nav{
+  width: 100vw;
+  height: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:solid 3px $theme;
+  .navbar_left{
+    margin-left: 2em;
+    font-weight: bold;
+    font-size: 1.7em;
+    letter-spacing: .3rem;
+  }
+}
