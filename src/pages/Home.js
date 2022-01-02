@@ -5,7 +5,7 @@ import Main from "../components/Main";
 const Home = () => {
     return (
         <div>
-            <Navigation color={oldColor} setOldColor={setOldColor} />
+            <Navigation />
             <Main/>
         </div>
     );
