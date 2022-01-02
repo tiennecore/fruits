@@ -3,13 +3,25 @@
 $font-1: "Poppins", sans-serif;
 
 
-$text: hsl(240, 21%, 24%);
-$background: hsl(240, 33%, 71%);
-$theme: hsl(240, 18%, 38%);
+
+
+
+/* theme 1*/
+$text1: hsl(240, 21%, 24%);
+$background1: hsl(240, 33%, 71%);
+$theme1: hsl(240, 18%, 38%);
+/* theme 2*/
+$text1: hsl(353, 62%, 14%);
+$background1: hsl(350, 33%, 62%);
+$theme1: hsl(359, 22%, 37%);
+/* theme 3*/
+/* theme 4*/
+/* theme 5*/
 
 body {
   margin: 0;
   padding: 0;
-  background:$background;
+  background:$background1;
   font-family: $font-1;
+  color:$text1;
 }

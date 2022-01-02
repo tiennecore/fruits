@@ -17,8 +17,8 @@ const NavRight = () => {
             <div className="hamburger" onClick={() => setHidden(!hidden)}>
                 <div className={`hamburger_line ${hidden ? "":"reveal"} first`}></div>
                 <div className={`hamburger_line ${hidden ? "":"reveal"} second`}></div>
-                <HiddenMenu reveal={hidden}/>
             </div>
+            <HiddenMenu reveal={hidden}/>
         </div>
     );
 };

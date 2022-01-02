@@ -4,10 +4,10 @@ import NavRight from "./NavRight";
 
 const Navigation = () => {
     return (
-        <div className="nav">
+        <nav>
             <NavLeft />
             <NavRight />
-        </div>
+        </nav>
     );
 };
 

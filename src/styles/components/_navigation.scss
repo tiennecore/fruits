@@ -1,11 +1,11 @@
 
-.nav{
+nav{
   width: 100vw;
   height: 6em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom:solid 3px $theme;
+  z-index: 10;
   .navbar_left{
     margin-left: 2em;
     font-weight: bold;
