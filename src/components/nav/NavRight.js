@@ -3,7 +3,6 @@ import HiddenMenu from "./HiddenMenu";
 
 const NavRight = () => {
     const [hidden,setHidden]=useState(true)
-
     return (
         <div className="navbar_right">
             <ul className="fruits">
