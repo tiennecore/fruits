@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 
 const Color = (values) => {
-    const color = values.oldColor
+    const [color,setColor] = useState(values.oldColor)
+
     return (
         <div className="fruit"
              onMouseEnter={() => values.setOldColor(values.color)}
