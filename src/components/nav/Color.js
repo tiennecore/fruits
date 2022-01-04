@@ -6,7 +6,7 @@ import {useHistory} from "react-router-dom";
 
 const Color = (props) => {
     const state = useSelector((state) => state)
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
     const functionsReducer = bindActionCreators(actionCreator,dispatch)
     const history = useHistory()
     const pageDestination = "/"+ props.name

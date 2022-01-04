@@ -2,7 +2,6 @@ export const SET_ID = "SET_ID"
 export const REVEAL = "REVEAL"
 export const CHOOSE = "CHOOSE"
 export const SET_THEME_ID = "SET_THEME_ID"
-export const INIT_CHOOSE = "INIT_CHOOSE"
 
 
 
@@ -23,9 +22,5 @@ export const reveal = hidden =>({
 
 export const choose = fruit =>({
     type:CHOOSE,
-    payload:fruit
-})
-export const initChoose = initchoosen => ({
-    type:INIT_CHOOSE,
-    payload: initchoosen
+    payload: fruit
 })

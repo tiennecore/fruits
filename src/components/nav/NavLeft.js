@@ -11,7 +11,7 @@ const NavLeft = () => {
     function returnHome(){
         history.push("/")
         window.setTimeout(() => {
-            functionsReducer.initChoose(false)
+            functionsReducer.choose(false)
         }, 100)
     }
     return (
