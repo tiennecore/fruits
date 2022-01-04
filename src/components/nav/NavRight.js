@@ -6,6 +6,7 @@ import {colorsList} from "../../data/color";
 
 const NavRight = () => {
     const state = useSelector((state) => state);
+
     const dispatch = useDispatch();
     return (
         <div className="navbar_right">

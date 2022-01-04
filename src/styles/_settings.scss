@@ -27,6 +27,7 @@ $theme1: hsl(359, 22%, 37%);
       height: 100vh;
       display: flex;
       flex-direction: column;
+      transition: all 1.4s ease;
     }
   }
 }

@@ -1,18 +1,18 @@
 import React from 'react';
-import Navigation from "../components/nav/Navigation";
-import {colorsList} from "../data/color";
+import Navigation from "../../components/nav/Navigation";
+import {colorsList} from "../../data/color";
 import {useSelector} from "react-redux";
-import Main from "../components/Main";
 
-const Home = () => {
+const Litchi = () => {
     const state = useSelector((state) => state.colorTheme)
 
     return (
         <div className="container" style={{ background: colorsList.background[state],color : colorsList.text[state] }}>
             <Navigation />
-            <Main />
+            <span>blabla</span>
+
         </div>
     );
 };
 
-export default Home;
+export default Litchi;

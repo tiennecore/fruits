@@ -1,5 +1,5 @@
 import {combineReducers} from "redux"
-import {SET_ID,REVEAL,SET_THEME_ID} from "../actions";
+import {SET_ID,REVEAL,SET_THEME_ID,CHOOSE,INIT_CHOOSE} from "../actions";
 
 
 const colorTheme = (state = 0, action) =>{
@@ -29,10 +29,23 @@ const hiddenMenu = (state = true,action)=>{
     }
 }
 
+const chooseFruit = (state = false,action)=>{
+    switch (action.type){
+        case CHOOSE:
+            return action.payload
+        case INIT_CHOOSE:
+            return action.payload
+        default:
+            return state
+    }
+}
+
 const rootReducer = combineReducers({
     colorMenu,
     hiddenMenu,
+    chooseFruit,
     colorTheme
+
 })
 
 export default rootReducer
