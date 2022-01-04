@@ -1,23 +1,18 @@
 import React, {useState} from 'react';
 import Color from "./Color";
+import {useSelector} from "react-redux";
+import {colorsList} from "../../data/color";
 
-const HiddenMenu = (props) => {
-    const colorList = [
-        "hsl(359, 22%, 37%)",
-        "hsl(240, 18%, 38%)",
-        "hsl(115,18%,38%)",
-        "hsl(36,54%,40%)",
-        "hsl(196,44%,51%)",
-        "hsl(12,59%,41%)"]
-    const [oldColor,setOldColor] = useState(colorList[0])
+const HiddenMenu = () => {
+    const state = useSelector((state) => state)
     return (
-        <div className={`hidden_menu ${props.reveal ? "":"reveal"}`} style={{ background: oldColor }}>
-            <Color color={colorList[0]} name="Goyave" oldColor={oldColor} setOldColor={setOldColor} />
-            <Color color={colorList[1]} name="Figue" oldColor={oldColor} setOldColor={setOldColor} />
-            <Color color={colorList[2]} name="Mangue" oldColor={oldColor} setOldColor={setOldColor} />
-            <Color color={colorList[3]} name="Grenade" oldColor={oldColor} setOldColor={setOldColor} />
-            <Color color={colorList[4]} name="Litchi" oldColor={oldColor} setOldColor={setOldColor} />
-            <Color color={colorList[5]} name="Papaye" oldColor={oldColor} setOldColor={setOldColor} />
+        <div className={`hidden_menu ${state.hiddenMenu ? "":"reveal"}`} style={{ background: colorsList.theme[state.colorMenu] }}>
+            <Color name="Goyave" id={0}/>
+            <Color name="Figue" id={1}/>
+            <Color name="Mangue" id={2}/>
+            <Color name="Grenade" id={3}/>
+            <Color name="Annanas" id={4}/>
+            <Color name="Litchi" id={5}/>
         </div>
     );
 };

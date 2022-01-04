@@ -17,11 +17,30 @@ $theme1: hsl(359, 22%, 37%);
 /* theme 3*/
 /* theme 4*/
 /* theme 5*/
+@media (min-width: 700px){
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-1;
+    .container{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+@media (max-width: 700px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-1;
 
-body {
-  margin: 0;
-  padding: 0;
-  background:$background1;
-  font-family: $font-1;
-  color:$text1;
+    .container{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

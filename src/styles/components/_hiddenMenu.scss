@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media (min-width: 1280px) {
   .hidden_menu {
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     bottom: 0;
     width: 50vw;
     height: 100vh;
-    z-index: -1;
+    z-index: 100;
     background-color: $theme1;
     transition: all .9s ease;
     transform: translateX(100%) ;
@@ -36,7 +36,7 @@
     transform: translateX(0%) ;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 1280px) {
   .hidden_menu {
     display: flex;
     flex-direction: column;
@@ -44,9 +44,9 @@
     right: 0;
     top: 0;
     bottom: 0;
-    width: 98vw;
+    width: 100vw;
     height: 100vh;
-    z-index: -1;
+    z-index: 100;
     transition: all .5s ;
     transform: translateX(100%) ;
 

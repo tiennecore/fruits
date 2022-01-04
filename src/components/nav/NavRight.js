@@ -1,23 +1,27 @@
 import React, {useState} from 'react';
 import HiddenMenu from "./HiddenMenu";
+import {useDispatch, useSelector} from "react-redux";
+import {reveal} from "../../actions";
+import {colorsList} from "../../data/color";
 
 const NavRight = () => {
-    const [hidden,setHidden]=useState(true)
+    const state = useSelector((state) => state);
+    const dispatch = useDispatch();
     return (
         <div className="navbar_right">
             <ul className="fruits">
-                <span><li className={hidden ? "":"reveal"}>Goyave</li></span>
-                <span><li className={hidden ? "":"reveal"}>Figue</li></span>
-                <span><li className={hidden ? "":"reveal"}>Mangue</li></span>
-                <span><li className={hidden ? "":"reveal"}>Grenade</li></span>
-                <span><li className={hidden ? "":"reveal"}>Litchi</li></span>
-                <span><li className={hidden ? "":"reveal"}>Papaye</li></span>
+                <span><li className={state.hiddenMenu ? "":"reveal"}>Goyave</li></span>
+                <span><li className={state.hiddenMenu ? "":"reveal"}>Figue</li></span>
+                <span><li className={state.hiddenMenu ? "":"reveal"}>Mangue</li></span>
+                <span><li className={state.hiddenMenu ? "":"reveal"}>Grenade</li></span>
+                <span><li className={state.hiddenMenu ? "":"reveal"}>Annanas</li></span>
+                <span><li className={state.hiddenMenu ? "":"reveal"}>Litchi</li></span>
             </ul>
-            <div className="hamburger" onClick={() => setHidden(!hidden)}>
-                <div className={`hamburger_line ${hidden ? "":"reveal"} first`}></div>
-                <div className={`hamburger_line ${hidden ? "":"reveal"} second`}></div>
+            <div className="hamburger" onClick={() => dispatch(reveal())} >
+                <div className={`hamburger_line ${state.hiddenMenu ? "":"reveal"} first`} style={{ background: state.hiddenMenu ? colorsList.text[state.colorTheme]:"white"}}></div>
+                <div className={`hamburger_line ${state.hiddenMenu ? "":"reveal"} second`} style={{ background: state.hiddenMenu ? colorsList.text[state.colorTheme]:"white"}}></div>
             </div>
-            <HiddenMenu reveal={hidden}/>
+            <HiddenMenu />
         </div>
     );
 };
