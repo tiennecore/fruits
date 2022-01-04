@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/fruits/static/css/main.17942b1e.css",
-    "main.js": "/fruits/static/js/main.f74ed330.js",
+    "main.css": "/fruits/static/css/main.fc73705f.css",
+    "main.js": "/fruits/static/js/main.9f70d0a2.js",
+    "static/media/litchi.png": "/fruits/static/media/litchi.f48686b59eb28c7b5565.png",
+    "static/media/figue.jpg": "/fruits/static/media/figue.418be0d60bc35e5e3995.jpg",
+    "static/media/grenade.jpg": "/fruits/static/media/grenade.571f0e8324d9c5ac6acf.jpg",
+    "static/media/mangue.jpg": "/fruits/static/media/mangue.753f56b921520885bb77.jpg",
+    "static/media/annanas.jpg": "/fruits/static/media/annanas.238aef1b6d89bd5967e2.jpg",
+    "static/media/goyave.jpg": "/fruits/static/media/goyave.b5f61f4ac9f487774eb9.jpg",
     "index.html": "/fruits/index.html",
-    "main.17942b1e.css.map": "/fruits/static/css/main.17942b1e.css.map",
-    "main.f74ed330.js.map": "/fruits/static/js/main.f74ed330.js.map"
+    "main.fc73705f.css.map": "/fruits/static/css/main.fc73705f.css.map",
+    "main.9f70d0a2.js.map": "/fruits/static/js/main.9f70d0a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.17942b1e.css",
-    "static/js/main.f74ed330.js"
+    "static/css/main.fc73705f.css",
+    "static/js/main.9f70d0a2.js"
   ]
 }
